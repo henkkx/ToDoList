@@ -68,7 +68,28 @@ li:nth-child(odd){
 	position:absolute;
 	top:0;
 	right:0;
-	color: #666
+	color: #f7f7f7;
+	
 }
 
+button:disabled{
+	background-color: #1D4350;
+}
 
+button {
+	background-color: cadetblue;
+	border: 2px solid gray;
+	color: white;
+	padding: 5px 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 8px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+  }
+
+button:hover {
+	background-color: #1D4350;
+	color: gray;
+}
