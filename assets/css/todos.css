@@ -1,7 +1,56 @@
+h1{
+	color: white;
+	background: #313035;
+	margin: 0;
+	padding: 10px 20px;
+	font-weight: normal;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body {
+	font-family: Roboto;
+}
+
+input{
+	color: #2980b9;
+	font-size: 18px;
+	background: #f7f7f7;
+	box-sizing: border-box;
+	width: 100%;
+	padding:  13px 13px 13px 20px
+}
+
+input:focus{
+	background: #fff;
+	border: 3px solid #2980b9;
+	outline: none;
+}
+
+li {
+	line-height: 30px;
+	height: 20px;
+	padding: 10px 20px;
+	background: #fff;
+	color: #666;
+}
+
+li:nth-child(odd){
+	background: #f7f7f7;
+}
+
+#toDoItems{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+
 #container {
-	border: 2px solid gray;
-	margin: 0 auto;
+	margin: 100px auto;
 	width: 480px;
+	background: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0,0,0,0.2);
+
 }
 
 .completed {
@@ -9,3 +58,5 @@
 	text-decoration: line-through;
 
 }
+
+
