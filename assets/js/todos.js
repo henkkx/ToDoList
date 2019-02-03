@@ -13,7 +13,7 @@ $("#toDoItems").on("click", "span", function(event){
 $("input[type='text']").keypress(function(event){
 	if(event.which === 13){
 		var text = $(this).val();
-		$("#toDoItems").append("<li> <span>x</span> " + text + "</li>");
+		$("#toDoItems").append("<li> <span><i class='fa fa-trash'></i> </span>" + text + "</li>");
 	}
 }); 
 	
@@ -58,4 +58,9 @@ $("button").click(function(){
 		$(this).prop("disabled", true);
 
 	}
-})
+});
+
+$(".fa-plus").click(function(){
+	$("input[type='text']").fadeToggle();
+
+});

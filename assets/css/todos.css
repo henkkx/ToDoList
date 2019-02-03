@@ -16,13 +16,26 @@ body {
 
 }
 
+span{
+	background: #A43931;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: #fff;
+	width: 40px;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
 input{
 	color: #2980b9;
 	font-size: 18px;
 	background: #f7f7f7;
 	box-sizing: border-box;
 	width: 100%;
-	padding:  13px 13px 13px 20px
+	padding:  13px 13px 13px 20px;
+	border: 3px solid rgba(0,0,0,0)
 }
 
 input:focus{
@@ -32,11 +45,15 @@ input:focus{
 }
 
 li {
-	line-height: 30px;
-	height: 20px;
-	padding: 10px 20px;
+	line-height: 40px;
+	height: 40px;
 	background: #fff;
 	color: #666;
+}
+
+li:hover span{
+	width: 40px;
+	opacity: 1.0;
 }
 
 li:nth-child(odd){
@@ -92,4 +109,8 @@ button {
 button:hover {
 	background-color: #1D4350;
 	color: gray;
+}
+
+.fa-plus{
+	float: right;
 }
